@@ -1,5 +1,3 @@
-"use client";
-
 import { IoMdBus } from "react-icons/io";
 import { BiPackage } from "react-icons/bi";
 import Navbar from "./Navbar";

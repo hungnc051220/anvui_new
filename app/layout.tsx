@@ -5,8 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Tech Bus - Chất lượng làm nên uy tín",
-  description: "tbusvietnam.com",
+  title: "Văn Minh | Trang chủ",
+  description: "vanminh76.vn",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
