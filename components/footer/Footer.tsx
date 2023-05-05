@@ -4,8 +4,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="pt-6 bg-gray-200">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-4">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div>
             <h3 className="text-xl text-primary font-medium mb-4">
               Công ty TNHH Văn Minh

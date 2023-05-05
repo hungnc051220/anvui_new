@@ -4,9 +4,9 @@ import Image from "next/image";
 const Card = () => {
   return (
     <section className="max-w-7xl mx-auto border-dashed border-primary py-6">
-      <div className="grid grid-cols-2 gap-8">
-        <div className="pr-[250px] p-6 border-t border-[1px] shadow-sm rounded-lg relative">
-          <div className="space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 px-2">
+        <div className="pr-[100px] md:pr-[250px] p-6 border-t border-[1px] shadow-sm rounded-lg relative">
+          <div className="space-y-4 relative z-10">
             <h3 className="text-2xl font-medium">Hệ thống phòng vé</h3>
             <p>Địa chỉ chi tiết các phòng vé trong hệ thống của Văn Minh</p>
             <Button className="bg-primary/20 text-primary">Xem đầy đủ</Button>
@@ -19,8 +19,8 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="pr-[250px] p-6 border-t border-[1px] shadow-sm rounded-lg relative">
-          <div className="space-y-4">
+        <div className="pr-[100px] md:pr-[250px] p-6 border-t border-[1px] shadow-sm rounded-lg relative">
+          <div className="space-y-4 relative z-10">
             <h3 className="text-2xl font-medium">Lịch trình</h3>
             <p>Các tuyến đường cùng ngày giờ cụ thể các chuyến xe của Văn Minh</p>
             <Button className="bg-primary/20 text-primary">Xem đầy đủ</Button>

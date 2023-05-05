@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="max-w-7xl mx-auto py-4">
+    <div className="hidden md:block max-w-7xl mx-auto py-4">
       <div className="flex items-center justify-between">
         <Image src="/images/logo.svg" alt="logo" width="60" height="60" style={{objectFit: "contain"}} />
         <div className="flex items-center gap-8 cursor-pointer">

@@ -18,11 +18,11 @@ export default function Home() {
       <Header />
       <div className="">
         <Banner />
-
-        <div className="my-6">
-          <div className="bg-white rounded-lg shadow-sm drop-shadow-sm max-w-5xl w-full z-10 -mt-[220px] right-0 my-0 mx-auto p-6">
-            <div className="grid grid-cols-5 gap-2 pb-6 border-b border-gray-200">
-              <div className="relative">
+        
+        <div className="my-6 px-4">
+          <div className="bg-white rounded-lg shadow-sm drop-shadow-sm max-w-5xl w-full z-10 -mt-[220px] right-0 my-0 mx-auto p-2 md:p-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-2 pb-6 border-b border-gray-200">
+              <div className="relative col-span-2 md:col-span-1">
                 <Select
                   className="w-full h-14"
                   showArrow={false}
@@ -40,7 +40,7 @@ export default function Home() {
                   Điểm khởi hành
                 </p>
               </div>
-              <div className="relative">
+              <div className="relative col-span-2 md:col-span-1">
                 <Select
                   className="w-full h-14"
                   showArrow={false}
@@ -78,13 +78,13 @@ export default function Home() {
                   Giờ khởi hành
                 </p>
               </div>
-              <Button className="h-14 bg-primary text-xl text-white font-semibold flex items-center gap-4 justify-center" icon={<AiOutlineSearch size={24}/>}>
+              <Button className="h-14 bg-primary text-xl text-white font-semibold flex items-center gap-4 justify-center col-span-2 md:col-span-1" icon={<AiOutlineSearch size={24}/>}>
                 Tìm vé xe
               </Button>
             </div>
 
             <div>
-              <p className="text-lg font-semibold text-center pt-6">
+              <p className="text-lg font-semibold text-center pt-6 px-10 md:px-0">
                 DỄ DÀNG ĐẶT VÉ XE TRÊN WEBSITE VĂN MINH
               </p>
 
@@ -98,7 +98,7 @@ export default function Home() {
                       width={36}
                     />
                   </div>
-                  <p className="text-center px-3">
+                  <p className="hidden sm:block text-center px-3">
                     Chọn thông tin hành trình và ấn Tìm vé
                   </p>
                   <div className="absolute h-10 w-10 rounded-full bg-gray-100 -right-4 top-3 flex items-center justify-center">
@@ -115,7 +115,7 @@ export default function Home() {
                       width={36}
                     />
                   </div>
-                  <p className="text-center px-3">
+                  <p className="hidden sm:block text-center px-3">
                     Chọn chuyến xe, chỗ ngồi phù hợp và điền thông tin
                   </p>
                   <div className="absolute h-10 w-10 rounded-full bg-gray-100 -right-4 top-3 flex items-center justify-center">
@@ -132,7 +132,7 @@ export default function Home() {
                       width={36}
                     />
                   </div>
-                  <p className="text-center px-3">
+                  <p className="hidden sm:block text-center px-3">
                     Tiến hành thanh toán online hoặc giữ chỗ trước
                   </p>
                   <div className="absolute h-10 w-10 rounded-full bg-gray-100 -right-4 top-3 flex items-center justify-center">
@@ -149,25 +149,26 @@ export default function Home() {
                       width={36}
                     />
                   </div>
-                  <p className="text-center px-3">Nhận mã vé và lên xe!</p>
+                  <p className="hidden sm:block text-center px-3">Nhận mã vé và lên xe!</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 max-w-5xl mx-auto mt-4">
-            <div className="flex items-center gap-4 pr-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto mt-4 gap-4">
+            <div className="flex items-center gap-4 pr-0 md:pr-16">
               <Image
                 src="/images/mobile.png"
                 alt="mobile"
                 height="156"
                 width="80"
+                className="hidden sm:inline-flex"
               />
               <div>
-                <h3 className="text-gray-500 leading-8 text-lg font-medium">
+                <h3 className="text-gray-500 leading-8 text-lg font-medium text-center md:text-left">
                   Tải ngay ứng dụng xe Văn Minh để đặt xe dễ dàng & gửi hàng
                   tiện lợi
                 </h3>
-                <div className="flex gap-2 mt-4">
+                <div className="flex justify-center md:justify-start gap-2 mt-4">
                   <a
                     href="#"
                     className="rounded-lg border-2 border-gray-600 flex items-center justify-start px-2 py-1 gap-2 text-gray-700"
@@ -207,10 +208,10 @@ export default function Home() {
             </div>
 
             <div className="space-y-2">
-              <p className="font-semibold">
+              <p className="font-semibold text-center md:text-left">
                 Tổng đài đặt vé và chăm sóc khách hàng 24/24
               </p>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center md:justify-start gap-2">
                 <Image
                   src="/images/phone.svg"
                   alt="phone"

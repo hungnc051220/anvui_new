@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const News = () => {
   return (
-    <section className="max-w-7xl mx-auto pt-6 pb-32">
+    <section className="max-w-7xl mx-auto pt-6 pb-12 md:pb-32">
       <h2 className="text-2xl font-medium text-center">Tin tức & Sự kiện</h2>
 
-      <div className="grid grid-cols-2 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-6 px-4 md:px-0">
           <div className="space-y-4">
             <h4 className="text-sm text-gray-800 mb-4 font-medium">
               Tin tức nội bộ
@@ -16,6 +16,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -32,6 +33,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -48,6 +50,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -64,6 +67,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -80,6 +84,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -102,6 +107,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -118,6 +124,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -134,6 +141,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -150,6 +158,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>
@@ -166,6 +175,7 @@ const News = () => {
                 width="160"
                 height="90"
                 alt="news"
+                className="h-[60px] w-[100px] md:h-[90px] md:w-[160px]"
               />
               <div className="space-y-1">
                 <p className="font-medium">BẾN XE PHÍA ĐÔNG ĐI VÀO HOẠT ĐỘNG</p>

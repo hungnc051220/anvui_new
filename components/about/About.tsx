@@ -2,7 +2,7 @@ import { Button } from "antd";
 
 const About = () => {
   return (
-    <section className="bg-gray-200 py-6">
+    <section className="bg-gray-200 py-4 md:py-6 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl font-medium">Giới thiệu về công ty Văn Minh</h2>
         <p className="mt-6 text-gray-600">
