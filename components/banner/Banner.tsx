@@ -1,13 +1,18 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="relative h-[30vh] min-h-[250px] bg-primary">
-        <Image src="/images/banner.png" alt="banner" fill style={{objectFit: "cover"}}/>
-    </div>
-  )
-}
+    <section className="absolute top-0 h-[250px] md:h-[300px] w-full bg-primary/70">
+      <Image
+        src="/assets/images/banner.svg"
+        alt="banner"
+        fill
+        className="object-cover"
+      />
+    </section>
+  );
+};
 
-export default Banner
+export default Banner;

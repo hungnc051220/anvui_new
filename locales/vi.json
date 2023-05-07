@@ -1,0 +1,32 @@
+{
+  "home": {
+    "title": "AnVui - Dịch vụ đặt xe tốt nhất Việt Nam",
+    "description": "Phát triển bởi anvui.vn",
+    "passengerTransport": "Vận chuyển hành khách",
+    "cargoTransport": "Vận chuyển hàng hoá",
+    "home": "Trang chủ",
+    "promo": "Khuyến mãi",
+    "ticketRoom": "Phòng vé",
+    "news": "Tin tức",
+    "recruitment": "Tuyển dụng",
+    "contact": "Liên hệ",
+    "departure": "Điểm khởi hành",
+    "destination": "Điểm tới",
+    "departureDay": "Ngày khởi hành",
+    "amountOfPeople": "Số chỗ",
+    "amountOfPeopleMax10": "Số chỗ (Tối đa 10)",
+    "findTicket": "Tìm vé xe",
+    "select": "Chọn",
+    "import": "Nhập",
+    "step": {
+      "title": "DỄ DÀNG ĐẶT VÉ XE TRÊN WEBSITE ANVUI",
+      "des1": "Chọn thông tin hành trình và ấn Tìm vé",
+      "des2": "Chọn chuyến xe, chỗ ngồi phù hợp và điền thông tin",
+      "des3": "Tiến hành thanh toán online hoặc giữ chỗ trước",
+      "des4": "Nhận mã vé và lên xe!"
+    }
+  },
+  "about": {
+    "title": "Giới thiệu"
+  }
+}

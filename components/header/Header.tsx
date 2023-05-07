@@ -1,26 +1,31 @@
+"use client";
+
 import { IoMdBus } from "react-icons/io";
 import { BiPackage } from "react-icons/bi";
 import Navbar from "./Navbar";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
+  const t = useTranslations("home");
+
   return (
-    <div className="sticky top-0 z-50 bg-white border-b border-[1px] w-full">
-      <div className="py-2 shadow-sm border-b border-[1px]">
-        <div className="space-x-6 max-w-7xl mx-auto flex items-center font-medium text-sm">
-          <div className="flex items-center gap-2 cursor-pointer hover:text-primary transition-all">
+    <header className="sticky top-0 w-full z-50 border-b border-[1px] bg-white">
+      <div className="h-8 shadow-sm">
+        <div className="max-w-7xl mx-auto flex items-center justify-center md:justify-start h-full gap-2 md:gap-6 text-sm font-medium">
+          <div className="flex items-center gap-1 cursor-pointer hover:text-primary transition-colors ease-in-out">
             <IoMdBus size={20} />
-            <p>Vận chuyển hàng khách</p>
+            <p>{t("passengerTransport")}</p>
           </div>
-          <div className="flex items-center gap-2 cursor-pointer hover:text-primary transition-all">
+
+          <div className="flex items-center gap-1 cursor-pointer hover:text-primary transition-colors ease-in-out">
             <BiPackage size={20} />
-            <p>Vận chuyển hàng hoá</p>
+            <p>{t("cargoTransport")}</p>
           </div>
         </div>
       </div>
 
-      {/* Navbar */}
       <Navbar />
-    </div>
+    </header>
   );
 };
 

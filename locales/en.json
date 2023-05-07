@@ -1,0 +1,32 @@
+{
+  "home": {
+    "title": "AnVui | Homepage ",
+    "description": "Powered by anvui.vn",
+    "passengerTransport": "Passenger transport",
+    "cargoTransport": "Cargo transport",
+    "home": "Home",
+    "promo": "Promo",
+    "ticketRoom": "Ticket room",
+    "news": "News",
+    "recruitment": "Recruitment",
+    "contact": "Contact",
+    "departure": "Departure",
+    "destination": "Destination",
+    "departureDay": "Departure day",
+    "amountOfPeople": "No. of seats",
+    "amountOfPeopleMax10": "No. of seats (Max 10)",
+    "findTicket": "Find ticket",
+    "select": "Select",
+    "import": "Input",
+    "step": {
+      "title": "EASY TO BOOK TICKET ON THE WEBSITE ANVUI",
+      "des1": "Select itineraries and press Find Ticket",
+      "des2": "Select the appropriate bus, seat and fill in the information",
+      "des3": "Proceed to pay online or reserve your seat in advance",
+      "des4": "Get the code and get on the bus!"
+    }
+  },
+  "about": {
+    "title": "About"
+  }
+}
