@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="pt-6 bg-gray-200 relative">
-      <div className="max-w-7xl mx-auto px-4">
+    <footer className="pt-6 bg-gray-200 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div>
             <h3 className="text-lg text-primary font-medium mb-4">

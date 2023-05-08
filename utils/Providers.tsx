@@ -4,7 +4,6 @@ import { AntdProvider } from "./AntdProvider";
 import { ConfigProvider } from "antd";
 import viVN from "antd/locale/vi_VN";
 import enUS from "antd/locale/en_US";
-import { useEffect, useState } from "react";
 
 interface ProviderProps {
   children: React.ReactNode;

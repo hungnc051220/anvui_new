@@ -102,3 +102,7 @@
   padding-left: 30px;
   padding-top: 20px;
 }
+
+.crumb {
+	clip-path: polygon(0% 0%, 97% 0, 100% 50%, 97% 100%, 0% 100%);
+}

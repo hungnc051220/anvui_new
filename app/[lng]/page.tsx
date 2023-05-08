@@ -1,3 +1,4 @@
+import { useTranslation } from "@/i18n";
 import BusTicket from "@/components/home/busTicket/BusTicket";
 import CardSlider from "@/components/home/cardSlider/CardSlider";
 import Download from "@/components/home/download/Download";
@@ -6,10 +7,14 @@ import Lookup from "@/components/home/lookup/Lookup";
 import Rules from "@/components/home/rules/Rules";
 import Search from "@/components/home/search/Search";
 
-export default function Home() {
+export default async function Home({
+  params: { lng },
+}: {
+  params: { lng: string };
+}) {
   return (
     <>
-      <Search />
+      <Search lng={lng}/>
       <Download />
       <CardSlider />
       <Lookup />

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 import { IconType } from "react-icons";
 import { AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
 import { TbDiscountCheck } from "react-icons/tb";
@@ -11,13 +10,28 @@ import { BsHeadphones, BsPeople } from "react-icons/bs";
 import { useState } from "react";
 import { Drawer } from "antd";
 import { FiPhoneCall } from "react-icons/fi";
+import { useTranslation } from "@/i18n/client";
+import Link from "next/link";
 
-const NavLink = ({ title, icon: Icon }: { title: string; icon: IconType }) => {
+const NavLink = ({
+  title,
+  icon: Icon,
+  href,
+  lng
+}: {
+  title: string;
+  icon: IconType;
+  href: string;
+  lng: string;
+}) => {
   return (
-    <div className="hover:text-primary font-medium text-gray-800 flex flex-col items-center transition-all">
+    <Link
+      href={`/${lng}/${href}`}
+      className="hover:text-primary font-medium text-gray-800 flex flex-col items-center transition-all"
+    >
       <Icon size={24} />
       <p>{title}</p>
-    </div>
+    </Link>
   );
 };
 
@@ -41,8 +55,8 @@ const NavLinkMobile = ({
   );
 };
 
-const Navbar = () => {
-  const t = useTranslations("home");
+const Navbar = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation(lng);
   const [isOpen, setIsOpen] = useState(false);
 
   const onOpen = () => setIsOpen(true);
@@ -57,7 +71,9 @@ const Navbar = () => {
         >
           <AiOutlineMenu size={18} className="text-white" />
         </div>
-        <p className="orange_gradient text-2xl font-bold block md:hidden">AN VUI</p>
+        <p className="orange_gradient text-2xl font-bold block md:hidden">
+          AN VUI
+        </p>
         <div className="relative h-10 w-10 md:h-12 md:w-12 cursor-pointer">
           <Image
             src="/assets/icons/logo.svg"
@@ -67,12 +83,17 @@ const Navbar = () => {
           />
         </div>
         <div className="items-center gap-8 cursor-pointer hidden md:flex">
-          <NavLink title={t("home")} icon={AiOutlineHome} />
-          <NavLink title={t("promo")} icon={TbDiscountCheck} />
-          <NavLink title={t("ticketRoom")} icon={MdOutlineHomeWork} />
-          <NavLink title={t("news")} icon={BiNews} />
-          <NavLink title={t("recruitment")} icon={BsPeople} />
-          <NavLink title={t("contact")} icon={BsHeadphones} />
+          <NavLink title={t("home.home")} icon={AiOutlineHome} href="/" lng={lng} />
+          <NavLink title={t("home.promo")} icon={TbDiscountCheck} href="/" lng={lng} />
+          <NavLink
+            title={t("home.ticketRoom")}
+            icon={MdOutlineHomeWork}
+            href="/phong-ve"
+            lng={lng}
+          />
+          <NavLink title={t("home.news")} icon={BiNews} href="/" lng={lng} />
+          <NavLink title={t("home.recruitment")} icon={BsPeople} href="/" lng={lng} />
+          <NavLink title={t("home.contact")} icon={BsHeadphones} href="/" lng={lng} />
         </div>
       </div>
       <Drawer
@@ -87,32 +108,32 @@ const Navbar = () => {
           <div className="flex-1 border-b border-gray-200">
             <ul className="cursor-pointer">
               <NavLinkMobile
-                title={t("home")}
+                title={t("home.home")}
                 icon={AiOutlineHome}
                 onClick={onClose}
               />
               <NavLinkMobile
-                title={t("promo")}
+                title={t("home.promo")}
                 icon={TbDiscountCheck}
                 onClick={onClose}
               />
               <NavLinkMobile
-                title={t("ticketRoom")}
+                title={t("home.ticketRoom")}
                 icon={MdOutlineHomeWork}
                 onClick={onClose}
               />
               <NavLinkMobile
-                title={t("news")}
+                title={t("home.news")}
                 icon={BiNews}
                 onClick={onClose}
               />
               <NavLinkMobile
-                title={t("recruitment")}
+                title={t("home.recruitment")}
                 icon={BsPeople}
                 onClick={onClose}
               />
               <NavLinkMobile
-                title={t("contact")}
+                title={t("home.contact")}
                 icon={BsHeadphones}
                 onClick={onClose}
               />
