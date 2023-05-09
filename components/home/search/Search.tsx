@@ -12,7 +12,7 @@ const Search = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng);
 
   return (
-    <section className="w-full bg-white rounded-lg shadow-md p-6 max-w-5xl mx-auto">
+    <section className="w-full bg-white rounded-2xl shadow-md p-4 md:p-6 max-w-5xl mx-auto">
       <SearchInput lng={lng} />
 
       <div className="pt-4 md:pt-6">

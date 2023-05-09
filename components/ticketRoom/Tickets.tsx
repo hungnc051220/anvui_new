@@ -75,7 +75,7 @@ const Tickets = () => {
       key: "price",
       dataIndex: "price",
       render: (text) => (
-        <p className="text-2xl font-bold text-green-500">{text}</p>
+        <p className="text-xl font-bold text-green-500">{text}</p>
       ),
     },
     Table.EXPAND_COLUMN,
@@ -530,10 +530,8 @@ const Tickets = () => {
           ),
           expandIcon: ({ expanded, onExpand, record }) => (
             <Button
-              type="primary"
-              size="large"
-              className="bg-primary/30 hover:bg-primary-10 text-primary font-medium text-lg"
               onClick={(e) => onExpand(record, e)}
+              className="border-primary text-primary hover:bg-primary hover:text-white"
             >
               Chọn chỗ
             </Button>

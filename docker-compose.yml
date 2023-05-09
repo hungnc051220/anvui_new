@@ -1,0 +1,12 @@
+version: '3'
+services:
+  backend:
+    container_name: anvui-website-nhaxe-nextjs
+    image: thanhlcm90/anvui-website-nhaxe-nextjs:latest
+    build:
+      context: .
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_GOOGLE_MAPS_KEY=AIzaSyBEoxAb7mPRewrA-Rnc0Hez-OiLIVWd9_g
+    ports:
+      - 3000:3000

@@ -19,6 +19,7 @@ export async function generateMetadata({
 }: {
   params: { lng: string };
 }) {
+
   return {
     title: "AnVui | Trang chủ",
     description: "anvui.vn",
@@ -43,9 +44,9 @@ export default async function RootLayout({
             <div className="gradient" />
           </div>
           <Header lng={lng} />
-          <main className="app">
+          <main className="app pt-6 md:pt-10">
             <Banner />
-            <div className="max-w-7xl mx-auto relative z-20 p-4 xl:p-0">
+            <div className="max-w-7xl mx-auto relative z-20 px-4 xl:p-0 mb-4 md:mb-10">
               {children}
             </div>
           </main>

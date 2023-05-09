@@ -106,3 +106,7 @@
 .crumb {
 	clip-path: polygon(0% 0%, 97% 0, 100% 50%, 97% 100%, 0% 100%);
 }
+
+.crumb-mobile {
+  clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
+}

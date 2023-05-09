@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center bg-gray-400 py-2 mt-8">
+      <div className="text-center bg-gray-400 py-2 px-4 mt-8">
         <p className="font-semibold">
           Copyright ©2023 AnVui. All rights reserved. Developed by
           anvui.vn

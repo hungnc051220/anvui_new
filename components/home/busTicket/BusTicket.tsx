@@ -89,7 +89,7 @@ const columns: ColumnsType<DataType> = [
 const BusTicket = () => {
   return (
     <section className="pt-4 md:pt-24 pb-6 border-b border-dashed border-primary">
-      <div className="p-6 bg-primary/20 relative pl-[130px] md:pl-[300px] -mx-4 md:mx-0 rounded-lg">
+      <div className="p-6 bg-primary/20 relative pl-[130px] md:pl-[300px] rounded-lg">
         <div className="absolute top-8 md:-top-16 left-2 md:left-0">
           <div className="relative h-[123px] w-[111px] md:h-[277px] md:w-[256px]">
             <Image

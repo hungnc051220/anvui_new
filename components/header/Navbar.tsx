@@ -39,19 +39,24 @@ const NavLinkMobile = ({
   title,
   icon: Icon,
   onClick,
+  href,
+  lng
 }: {
   title: string;
   icon: IconType;
   onClick: () => void;
+  href: string;
+  lng: string;
 }) => {
   return (
-    <li
+    <Link
       className="p-4 pl-6 flex items-center gap-4 font-medium hover:text-primary text-gray-800"
+      href={`/${lng}/${href}`}
       onClick={onClick}
     >
       <Icon size={24} />
       <p>{title}</p>
-    </li>
+    </Link>
   );
 };
 
@@ -83,17 +88,17 @@ const Navbar = ({ lng }: { lng: string }) => {
           />
         </div>
         <div className="items-center gap-8 cursor-pointer hidden md:flex">
-          <NavLink title={t("home.home")} icon={AiOutlineHome} href="/" lng={lng} />
-          <NavLink title={t("home.promo")} icon={TbDiscountCheck} href="/" lng={lng} />
+          <NavLink title={t("home.home")} icon={AiOutlineHome} href="" lng={lng} />
+          <NavLink title={t("home.promo")} icon={TbDiscountCheck} href="" lng={lng} />
           <NavLink
             title={t("home.ticketRoom")}
             icon={MdOutlineHomeWork}
-            href="/phong-ve"
+            href="phong-ve"
             lng={lng}
           />
-          <NavLink title={t("home.news")} icon={BiNews} href="/" lng={lng} />
-          <NavLink title={t("home.recruitment")} icon={BsPeople} href="/" lng={lng} />
-          <NavLink title={t("home.contact")} icon={BsHeadphones} href="/" lng={lng} />
+          <NavLink title={t("home.news")} icon={BiNews} href="" lng={lng} />
+          <NavLink title={t("home.recruitment")} icon={BsPeople} href="" lng={lng} />
+          <NavLink title={t("home.contact")} icon={BsHeadphones} href="" lng={lng} />
         </div>
       </div>
       <Drawer
@@ -109,31 +114,43 @@ const Navbar = ({ lng }: { lng: string }) => {
             <ul className="cursor-pointer">
               <NavLinkMobile
                 title={t("home.home")}
+                href=""
+                lng={lng}
                 icon={AiOutlineHome}
                 onClick={onClose}
               />
               <NavLinkMobile
                 title={t("home.promo")}
+                href=""
+                lng={lng}
                 icon={TbDiscountCheck}
                 onClick={onClose}
               />
               <NavLinkMobile
                 title={t("home.ticketRoom")}
+                href="phong-ve"
+                lng={lng}
                 icon={MdOutlineHomeWork}
                 onClick={onClose}
               />
               <NavLinkMobile
                 title={t("home.news")}
+                href=""
+                lng={lng}
                 icon={BiNews}
                 onClick={onClose}
               />
               <NavLinkMobile
                 title={t("home.recruitment")}
+                href=""
+                lng={lng}
                 icon={BsPeople}
                 onClick={onClose}
               />
               <NavLinkMobile
                 title={t("home.contact")}
+                href=""
+                lng={lng}
                 icon={BsHeadphones}
                 onClick={onClose}
               />
