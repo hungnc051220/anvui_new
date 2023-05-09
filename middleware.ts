@@ -19,8 +19,8 @@ export function middleware(req: NextRequest) {
   let lng!: string | null;
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName)?.value);
-  if (!lng) lng = acceptLanguage.get(req.headers.get("Accept-Language"));
   if (!lng) lng = fallbackLng;
+  if (!lng) lng = acceptLanguage.get(req.headers.get("Accept-Language"));
 
   // Redirect if lng in path is not supported
   if (
